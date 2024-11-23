@@ -29,7 +29,7 @@ echo "El nombre de usuario para la instalación de proot será: $username"
 # Cambiar el repositorio de Termux
 pkg update && pkg upgrade
 pkg install termux-tools
-#termux-change-repo
+termux-change-repo
 
 # Actualizar y mejorar paquetes en Termux
 pkg update -y -o Dpkg::Options::="--force-confold"
