@@ -12,7 +12,7 @@ Por favor, lee todo el README para obtener más información sobre esta configur
 Para instalar, ejecuta este comando en Termux:
 
 ```
-curl -sL https://raw.githubusercontent.com/phoenixbyrd/Termux_XFCE/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
+curl -sL https://raw.githubusercontent.com/nuntius-dev/Termux-XFCE/refs/heads/main/install.sh -o install.sh && chmod +x install.sh && ./install.sh
 ```
 &nbsp;
 
