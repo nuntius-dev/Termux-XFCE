@@ -26,12 +26,10 @@ echo ""
 username="ubuntu"
 echo "El nombre de usuario para la instalación de proot será: $username"
 
-# Cambiar los repositorios de Termux manualmente
-echo "Configurando los repositorios de Termux..."
-echo ""
-# Editar el archivo de repositorios para usar los oficiales de Termux
-echo "deb https://packages.termux.dev/apt/termux-main stable main" > $PREFIX/etc/apt/sources.list
-echo "deb https://packages.termux.dev/apt/termux-x11 x11 main" >> $PREFIX/etc/apt/sources.list
+# Cambiar el repositorio de Termux
+pkg update && pkg upgrade
+pkg install termux-tools
+termux-change-repo
 
 # Actualizar y mejorar paquetes en Termux
 pkg update -y -o Dpkg::Options::="--force-confold"
